@@ -6,28 +6,29 @@ import type { SiteConfig, SiteContent } from "./types";
 
 export const siteConfig: SiteConfig = {
   // Datos del negocio
-  businessName: "Nombre del Negocio",
-  businessType: "restaurant", // restaurant | clinic | legal | generic
+  businessName: "Risotto Tutti",
+  businessType: "restaurant",
 
   // Colores (se usan en CSS variables)
-  primaryColor: "#DC2626",
-  secondaryColor: "#1A1A2E",
+  primaryColor: "#1561f9",
+  secondaryColor: "#ffc9b3",
 
   // Google Maps embed URL
   mapsEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d-60.65!3d-32.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1",
+    "https://maps.google.com/maps?q=Gatti+8832,+Ibarlucea,+Santa+Fe&output=embed",
 
   // WhatsApp
-  whatsappNumber: "5493415551234",
-  whatsappMessage: "Hola! Vi su página web y quiero hacer una consulta",
+  whatsappNumber: "5493416211045",
+  whatsappMessage: "Hola! Vi su página y quiero más información",
 
   // SEO
-  metaTitle: "Nombre del Negocio | Rubro en Ciudad",
-  metaDescription: "Descripción breve del negocio para Google.",
+  metaTitle: "Risotto Tutti | Pastas caseras en Ibarlucea",
+  metaDescription:
+    "Risotto Tutti, pastas caseras en Ibarlucea desde 1998. Capelettis, sorrentinos, fideos cinta y salsas. Delivery y local. Hacé tu pedido por WhatsApp.",
 
   // Créditos
-  madeBy: "Tu Marca Web",
-  madeByUrl: "https://tu-portfolio.com",
+  madeBy: "Fabri Web",
+  madeByUrl: "https://fabri.dev",
 };
 
 // ============================================================
@@ -37,51 +38,56 @@ export const siteConfig: SiteConfig = {
 
 export const defaultContent: SiteContent = {
   heroTitle: siteConfig.businessName,
-  heroSubtitle: "Tu frase principal va acá",
-  heroCta: "Contactanos",
+  heroSubtitle: "Pastas caseras todo el año",
+  heroCta: "Hacé tu pedido",
   aboutText:
-    "Contá la historia de tu negocio acá. Quiénes son, qué hacen, por qué son diferentes.",
+    "Somos una empresa familiar dedicada a vender pastas desde 1998. Hacemos delivery y también atendemos en nuestro local. Pastas congeladas o frescas listas para cocinar!",
   services: [
     {
-      name: "Servicio 1",
-      description: "Descripción del servicio",
-      price: "$1000",
+      name: "Capelettis",
+      description: "x 20 unidades",
+      price: "$7.000",
     },
     {
-      name: "Servicio 2",
-      description: "Descripción del servicio",
-      price: "$2000",
+      name: "Sorrentinos",
+      description: "x 20 unidades",
+      price: "$13.000",
     },
     {
-      name: "Servicio 3",
-      description: "Descripción del servicio",
-      price: "$3000",
+      name: "Fideos cinta",
+      description: "x 500g",
+      price: "$3.600",
+    },
+    {
+      name: "Salsa bolognesa",
+      description: "Lista para servir, x 250g",
+      price: "$4.500",
+    },
+    {
+      name: "Salsa de crema",
+      description: "x 250g",
+      price: "$3.800",
     },
   ],
   reviews: [
     {
-      text: "Excelente atención y calidad. 100% recomendado.",
-      author: "Juan P.",
+      text: "Excelente atención y buena onda",
+      author: "Mariano",
       stars: 5,
     },
     {
-      text: "Muy buen servicio, volveré sin dudas.",
-      author: "María G.",
+      text: "Las pastas más ricas de Ibarlucea, unos genios",
+      author: "Luciana",
       stars: 5,
-    },
-    {
-      text: "Lo mejor de la zona, no se arrepienten.",
-      author: "Carlos R.",
-      stars: 4,
     },
   ],
   hours: {
-    "Lunes a Viernes": "9:00 - 18:00",
-    Sábados: "10:00 - 14:00",
+    "Lunes a Viernes": "09:00 - 20:00",
+    Sábados: "09:00 - 12:00",
     Domingos: "Cerrado",
   },
   phone: `+${siteConfig.whatsappNumber}`,
-  address: "Dirección del negocio, Ciudad",
-  socialInstagram: "",
+  address: "Gatti 8832, Ibarlucea",
+  socialInstagram: "risotto",
   socialFacebook: "",
 };
